@@ -1,0 +1,71 @@
+{
+  "fleet": {
+    "power_mw": 2000.0,
+    "energy_mwh": 8000.0,
+    "round_trip_eff": 0.9,
+    "soc_min_frac": 0.1,
+    "soc_max_frac": 0.9,
+    "soc_start_frac": 0.5,
+    "eps": 0.0001
+  },
+  "period": [
+    "2025-11-01",
+    "2026-10-31"
+  ],
+  "summary": [
+    {
+      "days_evaluated": 364,
+      "days_skipped_incomplete": 1
+    },
+    {
+      "source": "perfect",
+      "label": "Perfect foresight (upper bound)",
+      "mean_peak_reduction_mw": 1983.9170383873234,
+      "value_captured": 1.0,
+      "days_peak_worse": 0,
+      "residual_forecast_mae_mw": 0.0,
+      "mean_throughput_mwh": 7242.575887303602,
+      "non_optimal_solves": 0
+    },
+    {
+      "source": "tso",
+      "label": "TSO forecasts (load + renewables)",
+      "mean_peak_reduction_mw": 1363.539635897839,
+      "value_captured": 0.6872967011797158,
+      "days_peak_worse": 6,
+      "residual_forecast_mae_mw": 2751.6404930402928,
+      "mean_throughput_mwh": 7472.908043921056,
+      "non_optimal_solves": 0
+    },
+    {
+      "source": "gridmind_load_tso_res",
+      "label": "GridMind load + TSO renewables",
+      "mean_peak_reduction_mw": 1357.2851011043092,
+      "value_captured": 0.6841440820567842,
+      "days_peak_worse": 6,
+      "residual_forecast_mae_mw": 2330.280407746715,
+      "mean_throughput_mwh": 7483.612346493127,
+      "non_optimal_solves": 0
+    },
+    {
+      "source": "gridmind",
+      "label": "GridMind load + GridMind renewables",
+      "mean_peak_reduction_mw": 966.0979362909297,
+      "value_captured": 0.4869648869371305,
+      "days_peak_worse": 24,
+      "residual_forecast_mae_mw": 3835.973186258761,
+      "mean_throughput_mwh": 7311.412129604395,
+      "non_optimal_solves": 0
+    },
+    {
+      "source": "naive_d7",
+      "label": "Naive: same hour last week",
+      "mean_peak_reduction_mw": 591.5602265278395,
+      "value_captured": 0.2981779051651797,
+      "days_peak_worse": 35,
+      "residual_forecast_mae_mw": 11973.96843700231,
+      "mean_throughput_mwh": 7274.878646888808,
+      "non_optimal_solves": 0
+    }
+  ]
+}

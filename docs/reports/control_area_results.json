@@ -1,0 +1,121 @@
+{
+  "selection": {
+    "shrinkage_lambda": 1.0,
+    "hours": 4417,
+    "base_incoherence_mae_mw": 432.87596673206247,
+    "tso_incoherence_mae_mw": 0.2142291147837899,
+    "tso_mae_mw": {
+      "DE": 1791.4,
+      "DE_50HZ": 958.0,
+      "DE_AMPRION": 612.2,
+      "DE_TENNET": 731.5,
+      "DE_TRANSNETBW": 439.0
+    },
+    "methods": {
+      "base": {
+        "mae_mw": {
+          "DE": 1261.3,
+          "DE_50HZ": 612.5,
+          "DE_AMPRION": 510.2,
+          "DE_TENNET": 395.1,
+          "DE_TRANSNETBW": 203.8
+        },
+        "mean_mae_mw": 596.5732766370446,
+        "coherent": false
+      },
+      "bottom_up": {
+        "mae_mw": {
+          "DE": 1219.4,
+          "DE_50HZ": 612.5,
+          "DE_AMPRION": 510.2,
+          "DE_TENNET": 395.1,
+          "DE_TRANSNETBW": 203.8
+        },
+        "mean_mae_mw": 588.1910355766177,
+        "coherent": true
+      },
+      "ols": {
+        "mae_mw": {
+          "DE": 1240.5,
+          "DE_50HZ": 610.4,
+          "DE_AMPRION": 516.6,
+          "DE_TENNET": 404.0,
+          "DE_TRANSNETBW": 216.5
+        },
+        "mean_mae_mw": 597.6107117456178,
+        "coherent": true
+      },
+      "mint_shrink": {
+        "mae_mw": {
+          "DE": 1216.0,
+          "DE_50HZ": 609.9,
+          "DE_AMPRION": 512.2,
+          "DE_TENNET": 395.8,
+          "DE_TRANSNETBW": 203.1
+        },
+        "mean_mae_mw": 587.4094013507065,
+        "coherent": true
+      }
+    }
+  },
+  "chosen_method": "mint_shrink",
+  "test": {
+    "shrinkage_lambda": 1.0,
+    "hours": 8734,
+    "base_incoherence_mae_mw": 518.1144771209882,
+    "tso_incoherence_mae_mw": 0.0143176093434892,
+    "tso_mae_mw": {
+      "DE": 2066.6,
+      "DE_50HZ": 969.4,
+      "DE_AMPRION": 844.7,
+      "DE_TENNET": 1033.7,
+      "DE_TRANSNETBW": 486.1
+    },
+    "methods": {
+      "base": {
+        "mae_mw": {
+          "DE": 1611.2,
+          "DE_50HZ": 644.8,
+          "DE_AMPRION": 719.2,
+          "DE_TENNET": 546.5,
+          "DE_TRANSNETBW": 218.3
+        },
+        "mean_mae_mw": 747.9861792890564,
+        "coherent": false
+      },
+      "bottom_up": {
+        "mae_mw": {
+          "DE": 1513.1,
+          "DE_50HZ": 644.8,
+          "DE_AMPRION": 719.2,
+          "DE_TENNET": 546.5,
+          "DE_TRANSNETBW": 218.3
+        },
+        "mean_mae_mw": 728.3671825971483,
+        "coherent": true
+      },
+      "ols": {
+        "mae_mw": {
+          "DE": 1577.9,
+          "DE_50HZ": 650.6,
+          "DE_AMPRION": 729.8,
+          "DE_TENNET": 561.6,
+          "DE_TRANSNETBW": 248.7
+        },
+        "mean_mae_mw": 753.7285617822691,
+        "coherent": true
+      },
+      "mint_shrink": {
+        "mae_mw": {
+          "DE": 1524.9,
+          "DE_50HZ": 645.8,
+          "DE_AMPRION": 723.2,
+          "DE_TENNET": 549.3,
+          "DE_TRANSNETBW": 219.1
+        },
+        "mean_mae_mw": 732.4609735211302,
+        "coherent": true
+      }
+    }
+  }
+}

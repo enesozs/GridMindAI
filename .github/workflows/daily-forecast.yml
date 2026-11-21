@@ -1,0 +1,47 @@
+# Daily live forecast: issues tomorrow's DE-LU load forecast before the 10:00 Europe/Berlin
+# deadline and appends it to track_record/live_forecasts.csv (append-only, committed, so the
+# git history proves forecasts were not revised).
+#
+# Runs only once this repository is hosted on GitHub with Actions enabled.
+# Deployment of the site is intentionally not automated here.
+name: Daily forecast
+
+on:
+  schedule:
+    - cron: "15 6 * * *" # 06:15 UTC = 07:15 CET / 08:15 CEST, well before 10:00 local
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-forecast
+  cancel-in-progress: false
+
+jobs:
+  forecast:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
+      - run: uv sync --frozen
+      - name: Restore pipeline data cache
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: data
+          key: gridmind-data-${{ github.run_id }}
+          restore-keys: gridmind-data-
+      - name: Bootstrap full history if the cache is empty (first run, ~15 min)
+        run: test -f data/processed/actuals_hourly.parquet || uv run gridmind build
+      - name: Issue forecast (ingest recent data, retrain, append)
+        run: uv run gridmind live
+      - name: Health check (fails the run on stale data)
+        run: uv run gridmind status
+      - name: Commit track record
+        run: |
+          git config user.name "gridmind-bot"
+          git config user.email "gridmind-bot@users.noreply.github.com"
+          git add track_record/live_forecasts.csv apps/web/public/data/track_record.json
+          git diff --cached --quiet || git commit -m "live: forecast issued $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push

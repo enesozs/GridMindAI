@@ -1,0 +1,2778 @@
+{
+  "validation": {
+    "run_id": "7f661332ec61",
+    "from": "2024-11-01",
+    "to": "2025-10-31",
+    "n_hours": 8757,
+    "leaderboard": [
+      {
+        "model": "gbm_weather",
+        "label": "operational",
+        "mae_mw": 1467.8422890292522,
+        "rmse_mw": 2009.0035691733774,
+        "bias_mw": -195.12590864154046,
+        "mape_pct": 2.7309641876412476,
+        "peak_mae_mw": 1696.9661800823228,
+        "pinball_mean_mw": 475.84850423246337,
+        "coverage_90": 0.8858056412013247,
+        "width_90_mw": 6193.331279210911,
+        "coverage_50": 0.5125042822884549,
+        "width_50_mw": 2432.9644924844292,
+        "skill_vs_tso": 0.3119313963984661
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "label": "hindsight_oracle",
+        "mae_mw": 1468.7555014707698,
+        "rmse_mw": 1993.7561402656245,
+        "bias_mw": -149.9065448031423,
+        "mape_pct": 2.7389012399710833,
+        "peak_mae_mw": 1678.0324616982573,
+        "pinball_mean_mw": 470.7288970829227,
+        "coverage_90": 0.8875185565833048,
+        "width_90_mw": 6195.548541121119,
+        "coverage_50": 0.5088500628068974,
+        "width_50_mw": 2447.39190747156,
+        "skill_vs_tso": 0.31150331715989743
+      },
+      {
+        "model": "gbm_no_weather",
+        "label": "operational",
+        "mae_mw": 1561.084258500396,
+        "rmse_mw": 2092.4306633810834,
+        "bias_mw": -92.98061211268057,
+        "mape_pct": 2.909737385667764,
+        "peak_mae_mw": 1750.4765927145552,
+        "pinball_mean_mw": 497.21037462127015,
+        "coverage_90": 0.8868333904305127,
+        "width_90_mw": 6355.737817493536,
+        "coverage_50": 0.5063377869133264,
+        "width_50_mw": 2566.147825964604,
+        "skill_vs_tso": 0.26822310960868
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "label": "operational",
+        "mae_mw": 1731.9422332521608,
+        "rmse_mw": 2371.4386528010673,
+        "bias_mw": 257.5647935948496,
+        "mape_pct": 3.302302695512558,
+        "peak_mae_mw": 1760.7787821874829,
+        "pinball_mean_mw": 569.1561520858238,
+        "coverage_90": 0.8679913212287313,
+        "width_90_mw": 6698.217322473448,
+        "coverage_50": 0.4469567203380153,
+        "width_50_mw": 2296.769990939946,
+        "skill_vs_tso": 0.188131393366207
+      },
+      {
+        "model": "tso_official",
+        "label": "official benchmark",
+        "mae_mw": 2133.2789802443763,
+        "rmse_mw": 2688.7984197035585,
+        "bias_mw": -12.610781089414221,
+        "mape_pct": 4.024051955385248,
+        "peak_mae_mw": 2169.727424657534,
+        "pinball_mean_mw": null,
+        "coverage_90": null,
+        "width_90_mw": null,
+        "coverage_50": null,
+        "width_50_mw": null,
+        "skill_vs_tso": 0.0
+      },
+      {
+        "model": "naive_holiday_adjusted",
+        "label": "operational",
+        "mae_mw": 2315.4539152868624,
+        "rmse_mw": 3257.4753185121563,
+        "bias_mw": -123.86944643334417,
+        "mape_pct": 4.346951180756784,
+        "peak_mae_mw": 2387.4065989663995,
+        "pinball_mean_mw": 763.0488546055064,
+        "coverage_90": 0.8862624186365193,
+        "width_90_mw": 9202.03625089706,
+        "coverage_50": 0.44581477675002856,
+        "width_50_mw": 3054.470721916734,
+        "skill_vs_tso": -0.08539667653858252
+      },
+      {
+        "model": "naive_d7",
+        "label": "operational",
+        "mae_mw": 2658.6021822541966,
+        "rmse_mw": 4047.7681498960146,
+        "bias_mw": -87.44331963001024,
+        "mape_pct": 5.0331623130813625,
+        "peak_mae_mw": 2912.0795068493144,
+        "pinball_mean_mw": 914.9058201752885,
+        "coverage_90": 0.8907159986296677,
+        "width_90_mw": 10640.68609854973,
+        "coverage_50": 0.4447870275208405,
+        "width_50_mw": 3149.1050545278063,
+        "skill_vs_tso": -0.24625152494102864
+      },
+      {
+        "model": "naive_d2",
+        "label": "operational",
+        "mae_mw": 6246.274807582505,
+        "rmse_mw": 8161.278427275997,
+        "bias_mw": -10.540332305584132,
+        "mape_pct": 11.941669515057004,
+        "peak_mae_mw": 7210.896356164383,
+        "pinball_mean_mw": 2018.647538440676,
+        "coverage_90": 0.9193787826881352,
+        "width_90_mw": 29381.400332591063,
+        "coverage_50": 0.5145597807468311,
+        "width_50_mw": 9725.636163069545,
+        "skill_vs_tso": -1.9280159160744024
+      }
+    ],
+    "dm": [
+      {
+        "model": "gbm_weather",
+        "vs": "tso_official",
+        "dm_stat": -6.044635423773856,
+        "p_value": 1.4974822818226246e-09,
+        "n_days": 365
+      },
+      {
+        "model": "gbm_weather",
+        "vs": "gbm_no_weather",
+        "dm_stat": -4.3630044677672775,
+        "p_value": 1.2828832252758168e-05,
+        "n_days": 365
+      },
+      {
+        "model": "gbm_weather",
+        "vs": "naive_d7",
+        "dm_stat": -6.900249630219589,
+        "p_value": 5.191123672164081e-12,
+        "n_days": 365
+      },
+      {
+        "model": "gbm_no_weather",
+        "vs": "tso_official",
+        "dm_stat": -5.241475909169244,
+        "p_value": 1.5929727729114807e-07,
+        "n_days": 365
+      }
+    ],
+    "by_hour": [
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 0,
+        "mae": 1234.3544580582986
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 1,
+        "mae": 1189.893979771651
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 2,
+        "mae": 1178.4681593607763
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 3,
+        "mae": 1131.6963659158162
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 4,
+        "mae": 1154.6965214550444
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 5,
+        "mae": 1237.3976727413292
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 6,
+        "mae": 1432.9903459793686
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 7,
+        "mae": 1408.8663362003
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 8,
+        "mae": 1406.6802528978262
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 9,
+        "mae": 1447.088441346682
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 10,
+        "mae": 1669.1232473952134
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 11,
+        "mae": 1897.3074023168133
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 12,
+        "mae": 2105.6298521145563
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 13,
+        "mae": 2140.5827184226914
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 14,
+        "mae": 2105.2643859865407
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 15,
+        "mae": 2069.3084834389324
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 16,
+        "mae": 1983.2814669627776
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 17,
+        "mae": 1808.5539689396444
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 18,
+        "mae": 1662.5205541846208
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 19,
+        "mae": 1595.569910306363
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 20,
+        "mae": 1489.2985286055991
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 21,
+        "mae": 1379.9781081898104
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 22,
+        "mae": 1392.2332695711848
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 23,
+        "mae": 1342.0929839917176
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 0,
+        "mae": 1185.2608605987293
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 1,
+        "mae": 1107.8763363653693
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 2,
+        "mae": 1097.8374610694686
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 3,
+        "mae": 1038.4077579329262
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 4,
+        "mae": 1073.0900167866455
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 5,
+        "mae": 1188.8020480357186
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 6,
+        "mae": 1408.3884673965701
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 7,
+        "mae": 1395.344544297279
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 8,
+        "mae": 1372.659735738031
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 9,
+        "mae": 1364.4933001343218
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 10,
+        "mae": 1556.169134299126
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 11,
+        "mae": 1773.4533247773063
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 12,
+        "mae": 1938.3323020224925
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 13,
+        "mae": 1950.859079919528
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 14,
+        "mae": 1928.2578417837358
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 15,
+        "mae": 1877.6086584056084
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 16,
+        "mae": 1784.380882879822
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 17,
+        "mae": 1684.7981212197992
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 18,
+        "mae": 1563.751604013661
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 19,
+        "mae": 1547.4646193780218
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 20,
+        "mae": 1478.4199894214294
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 21,
+        "mae": 1362.6174950856393
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 22,
+        "mae": 1297.9180524732376
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 23,
+        "mae": 1270.8917598360572
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 0,
+        "mae": 1163.8613601691593
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 1,
+        "mae": 1089.919515512484
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 2,
+        "mae": 1076.1661641746214
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 3,
+        "mae": 1032.5556029921763
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 4,
+        "mae": 1052.3656707857156
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 5,
+        "mae": 1184.6311103878227
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 6,
+        "mae": 1408.0199734046867
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 7,
+        "mae": 1382.5108178266958
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 8,
+        "mae": 1395.0649254698012
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 9,
+        "mae": 1388.2634038343917
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 10,
+        "mae": 1565.5743188065112
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 11,
+        "mae": 1761.3030049658973
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 12,
+        "mae": 1952.471542372647
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 13,
+        "mae": 1980.1622082379156
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 14,
+        "mae": 1900.490047665952
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 15,
+        "mae": 1879.466646810158
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 16,
+        "mae": 1804.7528748902391
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 17,
+        "mae": 1678.7840401605713
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 18,
+        "mae": 1560.1079611721548
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 19,
+        "mae": 1533.619269584525
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 20,
+        "mae": 1479.4765864790445
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 21,
+        "mae": 1359.7118032201402
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 22,
+        "mae": 1308.8750803490432
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 23,
+        "mae": 1286.8417516089735
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 0,
+        "mae": 2039.064328767123
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 1,
+        "mae": 2019.0581369863016
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 2,
+        "mae": 2044.1288397790058
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 3,
+        "mae": 2022.6718630136986
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 4,
+        "mae": 2059.7619178082186
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 5,
+        "mae": 2238.042876712329
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 6,
+        "mae": 2746.35504109589
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 7,
+        "mae": 2959.9543287671236
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 8,
+        "mae": 2907.31506849315
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 9,
+        "mae": 2825.4055890410946
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 10,
+        "mae": 2995.8533698630135
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 11,
+        "mae": 3175.4967945205476
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 12,
+        "mae": 3342.901123287671
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 13,
+        "mae": 3468.2464931506847
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 14,
+        "mae": 3418.0094794520546
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 15,
+        "mae": 3316.9250684931503
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 16,
+        "mae": 3143.0324383561638
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 17,
+        "mae": 2948.1146849315064
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 18,
+        "mae": 2706.702356164384
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 19,
+        "mae": 2557.3358082191785
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 20,
+        "mae": 2367.670794520548
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 21,
+        "mae": 2252.496602739726
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 22,
+        "mae": 2146.5475068493142
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 23,
+        "mae": 2100.3113972602737
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 0,
+        "mae": 1396.5236162937372
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 1,
+        "mae": 1391.9656987450833
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 2,
+        "mae": 1391.8794048339707
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 3,
+        "mae": 1358.0032058754118
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 4,
+        "mae": 1308.0432394602897
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 5,
+        "mae": 1258.8290178525833
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 6,
+        "mae": 1520.051679012411
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 7,
+        "mae": 1734.1991629692254
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 8,
+        "mae": 1702.3692618447317
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 9,
+        "mae": 1669.9420336001479
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 10,
+        "mae": 1845.4720470939542
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 11,
+        "mae": 2056.0234067736533
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 12,
+        "mae": 2213.646562410731
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 13,
+        "mae": 2311.990722187759
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 14,
+        "mae": 2292.654564122189
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 15,
+        "mae": 2239.587397914053
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 16,
+        "mae": 2179.39550036452
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 17,
+        "mae": 2080.062137432968
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 18,
+        "mae": 1862.214206440373
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 19,
+        "mae": 1679.3498829053349
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 20,
+        "mae": 1510.4223555437168
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 21,
+        "mae": 1484.9407643950915
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 22,
+        "mae": 1536.2971558494635
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 23,
+        "mae": 1539.9555371845527
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 0,
+        "mae": 1646.5650958904114
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 1,
+        "mae": 1696.1290136986297
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 2,
+        "mae": 1792.6854972375695
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 3,
+        "mae": 1788.0134246575337
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 4,
+        "mae": 1651.9291506849318
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 5,
+        "mae": 1526.0403835616441
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 6,
+        "mae": 1870.9929041095904
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 7,
+        "mae": 2100.460465753424
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 8,
+        "mae": 2038.5864383561648
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 9,
+        "mae": 2078.4221917808222
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 10,
+        "mae": 2496.251424657534
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 11,
+        "mae": 2753.9535616438357
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 12,
+        "mae": 2888.096657534246
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 13,
+        "mae": 2968.692821917808
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 14,
+        "mae": 2818.8021643835623
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 15,
+        "mae": 2687.291561643834
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 16,
+        "mae": 2685.256876712328
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 17,
+        "mae": 2500.349287671232
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 18,
+        "mae": 2179.7564657534244
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 19,
+        "mae": 2010.3636164383554
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 20,
+        "mae": 1869.3169041095898
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 21,
+        "mae": 1742.2110684931508
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 22,
+        "mae": 1713.168602739726
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 23,
+        "mae": 1692.5605479452054
+      }
+    ],
+    "by_month": [
+      {
+        "model": "gbm_no_weather",
+        "month": "2024-11",
+        "mae": 1645.0726697556554
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2024-12",
+        "mae": 2362.4884063302925
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2025-01",
+        "mae": 1968.2561182780623
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2025-02",
+        "mae": 1568.840200341588
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2025-03",
+        "mae": 1586.5133826725144
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2025-04",
+        "mae": 1573.2322313217842
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2025-05",
+        "mae": 1311.3515991042084
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2025-06",
+        "mae": 1510.7713362851691
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2025-07",
+        "mae": 1040.0908358237002
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2025-08",
+        "mae": 1167.3854479641172
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2025-09",
+        "mae": 1267.1526576516455
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2025-10",
+        "mae": 1724.466865551893
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2024-11",
+        "mae": 1510.7953657381129
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2024-12",
+        "mae": 2368.3900190169784
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2025-01",
+        "mae": 1930.353171032015
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2025-02",
+        "mae": 1448.0095350819668
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2025-03",
+        "mae": 1414.1203610906452
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2025-04",
+        "mae": 1347.7788224871604
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2025-05",
+        "mae": 1283.5182666238786
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2025-06",
+        "mae": 1449.2174114022687
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2025-07",
+        "mae": 904.1494434648187
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2025-08",
+        "mae": 1104.479192711518
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2025-09",
+        "mae": 1254.544017126884
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2025-10",
+        "mae": 1596.8826226021004
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2024-11",
+        "mae": 1545.3532664272136
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2024-12",
+        "mae": 2368.527745075216
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2025-01",
+        "mae": 1931.6054375778103
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2025-02",
+        "mae": 1408.360134030377
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2025-03",
+        "mae": 1422.7695687700477
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2025-04",
+        "mae": 1377.812898462694
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2025-05",
+        "mae": 1264.6878974927936
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2025-06",
+        "mae": 1470.5404544815146
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2025-07",
+        "mae": 875.1308845635336
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2025-08",
+        "mae": 1058.6994869000364
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2025-09",
+        "mae": 1290.2182690628283
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2025-10",
+        "mae": 1588.0133750200578
+      },
+      {
+        "model": "naive_d7",
+        "month": "2024-11",
+        "mae": 2630.0798611111113
+      },
+      {
+        "model": "naive_d7",
+        "month": "2024-12",
+        "mae": 3672.620819892473
+      },
+      {
+        "model": "naive_d7",
+        "month": "2025-01",
+        "mae": 3948.694368279569
+      },
+      {
+        "model": "naive_d7",
+        "month": "2025-02",
+        "mae": 2327.1985863095238
+      },
+      {
+        "model": "naive_d7",
+        "month": "2025-03",
+        "mae": 2536.725908479139
+      },
+      {
+        "model": "naive_d7",
+        "month": "2025-04",
+        "mae": 3223.744211994422
+      },
+      {
+        "model": "naive_d7",
+        "month": "2025-05",
+        "mae": 3050.1150403225806
+      },
+      {
+        "model": "naive_d7",
+        "month": "2025-06",
+        "mae": 3511.844513888889
+      },
+      {
+        "model": "naive_d7",
+        "month": "2025-07",
+        "mae": 1383.858508064516
+      },
+      {
+        "model": "naive_d7",
+        "month": "2025-08",
+        "mae": 1273.909905913978
+      },
+      {
+        "model": "naive_d7",
+        "month": "2025-09",
+        "mae": 1495.230472222222
+      },
+      {
+        "model": "naive_d7",
+        "month": "2025-10",
+        "mae": 2826.328362416107
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2024-11",
+        "mae": 1492.552693159589
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2024-12",
+        "mae": 2662.17955456714
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2025-01",
+        "mae": 2217.742870904857
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2025-02",
+        "mae": 1505.4835103352877
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2025-03",
+        "mae": 1760.5427369391539
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2025-04",
+        "mae": 2114.663711996243
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2025-05",
+        "mae": 1763.027913773499
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2025-06",
+        "mae": 1763.2151123658
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2025-07",
+        "mae": 1035.734097424526
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2025-08",
+        "mae": 1329.3376672558702
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2025-09",
+        "mae": 1233.6931357777194
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2025-10",
+        "mae": 1874.1688047485331
+      },
+      {
+        "model": "tso_official",
+        "month": "2024-11",
+        "mae": 3221.6086805555556
+      },
+      {
+        "model": "tso_official",
+        "month": "2024-12",
+        "mae": 3066.1902419354838
+      },
+      {
+        "model": "tso_official",
+        "month": "2025-01",
+        "mae": 2552.7379704301075
+      },
+      {
+        "model": "tso_official",
+        "month": "2025-02",
+        "mae": 2043.048735119048
+      },
+      {
+        "model": "tso_official",
+        "month": "2025-03",
+        "mae": 1565.9238492597576
+      },
+      {
+        "model": "tso_official",
+        "month": "2025-04",
+        "mae": 2423.606359832636
+      },
+      {
+        "model": "tso_official",
+        "month": "2025-05",
+        "mae": 2203.475725806452
+      },
+      {
+        "model": "tso_official",
+        "month": "2025-06",
+        "mae": 1519.4634305555555
+      },
+      {
+        "model": "tso_official",
+        "month": "2025-07",
+        "mae": 1562.2585215053762
+      },
+      {
+        "model": "tso_official",
+        "month": "2025-08",
+        "mae": 1984.3405376344087
+      },
+      {
+        "model": "tso_official",
+        "month": "2025-09",
+        "mae": 1752.5068888888889
+      },
+      {
+        "model": "tso_official",
+        "month": "2025-10",
+        "mae": 1708.8228053691275
+      }
+    ],
+    "by_temp": [
+      {
+        "model": "gbm_no_weather",
+        "temp_bin": "0\u201310\u00b0C",
+        "mae": 1833.112646701845,
+        "hours": 3598
+      },
+      {
+        "model": "gbm_no_weather",
+        "temp_bin": "10\u201320\u00b0C",
+        "mae": 1362.889536377233,
+        "hours": 3983
+      },
+      {
+        "model": "gbm_no_weather",
+        "temp_bin": "<0\u00b0C",
+        "mae": 1464.1446817586111,
+        "hours": 192
+      },
+      {
+        "model": "gbm_no_weather",
+        "temp_bin": "\u226520\u00b0C",
+        "mae": 1387.5718969172283,
+        "hours": 984
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "temp_bin": "0\u201310\u00b0C",
+        "mae": 1724.223811335512,
+        "hours": 3598
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "temp_bin": "10\u201320\u00b0C",
+        "mae": 1273.4751661499552,
+        "hours": 3983
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "temp_bin": "<0\u00b0C",
+        "mae": 1546.4762189205633,
+        "hours": 192
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "temp_bin": "\u226520\u00b0C",
+        "mae": 1309.9183255958742,
+        "hours": 984
+      },
+      {
+        "model": "gbm_weather",
+        "temp_bin": "0\u201310\u00b0C",
+        "mae": 1731.464266481893,
+        "hours": 3598
+      },
+      {
+        "model": "gbm_weather",
+        "temp_bin": "10\u201320\u00b0C",
+        "mae": 1281.6300254880832,
+        "hours": 3983
+      },
+      {
+        "model": "gbm_weather",
+        "temp_bin": "<0\u00b0C",
+        "mae": 1403.3894475841328,
+        "hours": 192
+      },
+      {
+        "model": "gbm_weather",
+        "temp_bin": "\u226520\u00b0C",
+        "mae": 1270.2269601342691,
+        "hours": 984
+      },
+      {
+        "model": "naive_d7",
+        "temp_bin": "0\u201310\u00b0C",
+        "mae": 2960.9605808782653,
+        "hours": 3598
+      },
+      {
+        "model": "naive_d7",
+        "temp_bin": "10\u201320\u00b0C",
+        "mae": 2589.1370348983173,
+        "hours": 3983
+      },
+      {
+        "model": "naive_d7",
+        "temp_bin": "<0\u00b0C",
+        "mae": 3322.117239583333,
+        "hours": 192
+      },
+      {
+        "model": "naive_d7",
+        "temp_bin": "\u226520\u00b0C",
+        "mae": 1704.7396544715448,
+        "hours": 984
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "temp_bin": "0\u201310\u00b0C",
+        "mae": 1882.5402817249403,
+        "hours": 3598
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "temp_bin": "10\u201320\u00b0C",
+        "mae": 1667.366862819756,
+        "hours": 3983
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "temp_bin": "<0\u00b0C",
+        "mae": 1935.576813843374,
+        "hours": 192
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "temp_bin": "\u226520\u00b0C",
+        "mae": 1402.932154546562,
+        "hours": 984
+      },
+      {
+        "model": "tso_official",
+        "temp_bin": "0\u201310\u00b0C",
+        "mae": 2457.2262506948305,
+        "hours": 3598
+      },
+      {
+        "model": "tso_official",
+        "temp_bin": "10\u201320\u00b0C",
+        "mae": 1902.38755711775,
+        "hours": 3983
+      },
+      {
+        "model": "tso_official",
+        "temp_bin": "<0\u00b0C",
+        "mae": 2483.649635416667,
+        "hours": 192
+      },
+      {
+        "model": "tso_official",
+        "temp_bin": "\u226520\u00b0C",
+        "mae": 1814.9935060975606,
+        "hours": 984
+      }
+    ]
+  },
+  "test": {
+    "run_id": "e9a3c0caf63f",
+    "from": "2025-11-01",
+    "to": "2026-10-31",
+    "n_hours": 8757,
+    "leaderboard": [
+      {
+        "model": "gbm_oracle_weather",
+        "label": "hindsight_oracle",
+        "mae_mw": 1588.5170983412615,
+        "rmse_mw": 2042.348190739702,
+        "bias_mw": 78.80767757929287,
+        "mape_pct": 2.9630839385580168,
+        "peak_mae_mw": 1657.9242367634506,
+        "pinball_mean_mw": 501.9789573770378,
+        "coverage_90": 0.8973392714399908,
+        "width_90_mw": 6928.870190612803,
+        "coverage_50": 0.5096494233184881,
+        "width_50_mw": 2687.9364524149064,
+        "skill_vs_tso": 0.23175551027528973
+      },
+      {
+        "model": "gbm_weather",
+        "label": "operational",
+        "mae_mw": 1598.3588822211557,
+        "rmse_mw": 2051.257392368607,
+        "bias_mw": 67.9462935542504,
+        "mape_pct": 2.9780817774139816,
+        "peak_mae_mw": 1664.3920217428902,
+        "pinball_mean_mw": 504.5816887852623,
+        "coverage_90": 0.8995089642571656,
+        "width_90_mw": 6904.606937912393,
+        "coverage_50": 0.5047390658901451,
+        "width_50_mw": 2701.126637603162,
+        "skill_vs_tso": 0.2269957905072839
+      },
+      {
+        "model": "gbm_no_weather",
+        "label": "operational",
+        "mae_mw": 1705.2785881249285,
+        "rmse_mw": 2202.267493970084,
+        "bias_mw": 19.791817668208022,
+        "mape_pct": 3.1892614339227894,
+        "peak_mae_mw": 1766.627790158515,
+        "pinball_mean_mw": 535.603817736082,
+        "coverage_90": 0.9052186821970994,
+        "width_90_mw": 7300.365352793742,
+        "coverage_50": 0.5152449468996232,
+        "width_50_mw": 2866.063549587637,
+        "skill_vs_tso": 0.17528688854498742
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "label": "operational",
+        "mae_mw": 1885.4122168479869,
+        "rmse_mw": 2557.309995737575,
+        "bias_mw": 170.30963567017605,
+        "mape_pct": 3.5626057309597057,
+        "peak_mae_mw": 1873.5501123214797,
+        "pinball_mean_mw": 620.5168971200495,
+        "coverage_90": 0.8507479730501313,
+        "width_90_mw": 6915.626157442277,
+        "coverage_50": 0.43530889574055043,
+        "width_50_mw": 2382.0284423395387,
+        "skill_vs_tso": 0.08816999957658378
+      },
+      {
+        "model": "tso_official",
+        "label": "official benchmark",
+        "mae_mw": 2067.723387004682,
+        "rmse_mw": 2677.207125496593,
+        "bias_mw": 273.83281717483163,
+        "mape_pct": 3.881132416090064,
+        "peak_mae_mw": 2050.856219178082,
+        "pinball_mean_mw": null,
+        "coverage_90": null,
+        "width_90_mw": null,
+        "coverage_50": null,
+        "width_50_mw": null,
+        "skill_vs_tso": 0.0
+      },
+      {
+        "model": "naive_holiday_adjusted",
+        "label": "operational",
+        "mae_mw": 2554.198633036916,
+        "rmse_mw": 3480.0940228423083,
+        "bias_mw": -29.86896743244392,
+        "mape_pct": 4.749070006785814,
+        "peak_mae_mw": 2653.3768107393207,
+        "pinball_mean_mw": 830.9962466337947,
+        "coverage_90": 0.8666209889231472,
+        "width_90_mw": 9416.69796329253,
+        "coverage_50": 0.40641772296448553,
+        "width_50_mw": 3164.59947185109,
+        "skill_vs_tso": -0.23527095021009803
+      },
+      {
+        "model": "naive_d7",
+        "label": "operational",
+        "mae_mw": 2808.60070343725,
+        "rmse_mw": 4061.263687477989,
+        "bias_mw": 34.69611282402651,
+        "mape_pct": 5.2505996046976104,
+        "peak_mae_mw": 3032.682876712329,
+        "pinball_mean_mw": 938.8168269875529,
+        "coverage_90": 0.8884321114536942,
+        "width_90_mw": 10830.702681055154,
+        "coverage_50": 0.40630352860568686,
+        "width_50_mw": 3270.0020640630346,
+        "skill_vs_tso": -0.3583058164785802
+      },
+      {
+        "model": "naive_d2",
+        "label": "operational",
+        "mae_mw": 6278.059016215598,
+        "rmse_mw": 8110.32033534549,
+        "bias_mw": 19.134906360625838,
+        "mape_pct": 11.920066785060014,
+        "peak_mae_mw": 7221.017452054794,
+        "pinball_mean_mw": 2012.5972644924063,
+        "coverage_90": 0.9216626698641087,
+        "width_90_mw": 29068.468810208975,
+        "coverage_50": 0.49548932282745234,
+        "width_50_mw": 9692.031971565604,
+        "skill_vs_tso": -2.036218023973717
+      }
+    ],
+    "dm": [
+      {
+        "model": "gbm_weather",
+        "vs": "tso_official",
+        "dm_stat": -6.047123876528351,
+        "p_value": 1.4745438346405925e-09,
+        "n_days": 365
+      },
+      {
+        "model": "gbm_weather",
+        "vs": "gbm_no_weather",
+        "dm_stat": -4.3169946588788966,
+        "p_value": 1.5816798413194234e-05,
+        "n_days": 365
+      },
+      {
+        "model": "gbm_weather",
+        "vs": "naive_d7",
+        "dm_stat": -6.275769672262601,
+        "p_value": 3.479088957108831e-10,
+        "n_days": 365
+      },
+      {
+        "model": "gbm_no_weather",
+        "vs": "tso_official",
+        "dm_stat": -4.759095041967484,
+        "p_value": 1.9446285821151017e-06,
+        "n_days": 365
+      }
+    ],
+    "by_hour": [
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 0,
+        "mae": 1491.4683689530834
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 1,
+        "mae": 1504.9902222439978
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 2,
+        "mae": 1445.2534127303838
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 3,
+        "mae": 1404.7551818021827
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 4,
+        "mae": 1413.712823575035
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 5,
+        "mae": 1385.2996775337701
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 6,
+        "mae": 1453.8221477132283
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 7,
+        "mae": 1385.631934840171
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 8,
+        "mae": 1443.8054770578617
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 9,
+        "mae": 1500.4983991396787
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 10,
+        "mae": 1775.116453924929
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 11,
+        "mae": 2086.7520885756835
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 12,
+        "mae": 2303.069741597705
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 13,
+        "mae": 2342.2714057951653
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 14,
+        "mae": 2277.814419713233
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 15,
+        "mae": 2225.75895020553
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 16,
+        "mae": 2046.937288923183
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 17,
+        "mae": 1841.4115397178568
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 18,
+        "mae": 1685.5562014126363
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 19,
+        "mae": 1632.058702068455
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 20,
+        "mae": 1565.711834453012
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 21,
+        "mae": 1551.1065958863285
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 22,
+        "mae": 1586.7683919601748
+      },
+      {
+        "model": "gbm_no_weather",
+        "local_hour": 23,
+        "mae": 1574.9776619525742
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 0,
+        "mae": 1368.1175436737785
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 1,
+        "mae": 1370.6466932838077
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 2,
+        "mae": 1323.838868822255
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 3,
+        "mae": 1294.6183497024053
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 4,
+        "mae": 1307.3408666201938
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 5,
+        "mae": 1348.3694044047272
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 6,
+        "mae": 1450.0607099093095
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 7,
+        "mae": 1382.7265077706747
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 8,
+        "mae": 1417.7363497013355
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 9,
+        "mae": 1435.1198979012572
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 10,
+        "mae": 1665.50702692831
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 11,
+        "mae": 1933.3468203095438
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 12,
+        "mae": 2103.5558298959972
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 13,
+        "mae": 2114.7165846345133
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 14,
+        "mae": 2050.843358713381
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 15,
+        "mae": 2019.95970783291
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 16,
+        "mae": 1838.684586364848
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 17,
+        "mae": 1666.704952853731
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 18,
+        "mae": 1531.2049831485483
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 19,
+        "mae": 1557.89782875646
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 20,
+        "mae": 1515.165333941029
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 21,
+        "mae": 1479.7874066085928
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 22,
+        "mae": 1468.8883310938616
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "local_hour": 23,
+        "mae": 1477.3969798159085
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 0,
+        "mae": 1339.3854942049954
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 1,
+        "mae": 1378.107858363977
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 2,
+        "mae": 1304.516581560813
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 3,
+        "mae": 1281.5318545881778
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 4,
+        "mae": 1292.461092289837
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 5,
+        "mae": 1304.5085215471902
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 6,
+        "mae": 1446.90525019251
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 7,
+        "mae": 1357.6733166010176
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 8,
+        "mae": 1409.7839727557146
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 9,
+        "mae": 1453.6185069188155
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 10,
+        "mae": 1716.5786854863272
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 11,
+        "mae": 2011.5679270208832
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 12,
+        "mae": 2167.143684688488
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 13,
+        "mae": 2136.304602954222
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 14,
+        "mae": 2059.6774120059604
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 15,
+        "mae": 2070.4631663425102
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 16,
+        "mae": 1907.3838680017845
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 17,
+        "mae": 1697.4305504183917
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 18,
+        "mae": 1557.6849931578054
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 19,
+        "mae": 1565.8116321004034
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 20,
+        "mae": 1509.7918455902902
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 21,
+        "mae": 1487.1745471511808
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 22,
+        "mae": 1462.8846958260676
+      },
+      {
+        "model": "gbm_weather",
+        "local_hour": 23,
+        "mae": 1439.8079713431678
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 0,
+        "mae": 2270.6207123287672
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 1,
+        "mae": 2254.276191780822
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 2,
+        "mae": 2229.6776243093923
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 3,
+        "mae": 2197.372082191781
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 4,
+        "mae": 2209.941643835616
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 5,
+        "mae": 2316.9413698630137
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 6,
+        "mae": 2637.570246575342
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 7,
+        "mae": 2873.152356164384
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 8,
+        "mae": 2941.046273972603
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 9,
+        "mae": 2960.1979178082192
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 10,
+        "mae": 3191.9665479452055
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 11,
+        "mae": 3415.0696712328763
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 12,
+        "mae": 3557.725534246576
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 13,
+        "mae": 3663.9148493150688
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 14,
+        "mae": 3635.5736438356166
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 15,
+        "mae": 3557.7485753424658
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 16,
+        "mae": 3344.5360000000005
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 17,
+        "mae": 3043.5734246575344
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 18,
+        "mae": 2799.8703835616448
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 19,
+        "mae": 2667.2105205479447
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 20,
+        "mae": 2551.84797260274
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 21,
+        "mae": 2447.612410958904
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 22,
+        "mae": 2365.2932602739725
+      },
+      {
+        "model": "naive_d7",
+        "local_hour": 23,
+        "mae": 2268.9193972602743
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 0,
+        "mae": 1639.4496271776077
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 1,
+        "mae": 1665.3189508785265
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 2,
+        "mae": 1628.0108803950059
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 3,
+        "mae": 1536.3096309674281
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 4,
+        "mae": 1469.7844101261724
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 5,
+        "mae": 1435.4550608767277
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 6,
+        "mae": 1598.1181366473804
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 7,
+        "mae": 1765.2826858834858
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 8,
+        "mae": 1836.6411645544122
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 9,
+        "mae": 1806.6041229097862
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 10,
+        "mae": 1955.7388286699513
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 11,
+        "mae": 2181.570990243492
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 12,
+        "mae": 2328.0379498012517
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 13,
+        "mae": 2407.225152692461
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 14,
+        "mae": 2440.0408549123513
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 15,
+        "mae": 2412.166571689665
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 16,
+        "mae": 2303.693774458425
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 17,
+        "mae": 2180.236333788646
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 18,
+        "mae": 1946.5605252601745
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 19,
+        "mae": 1807.436750019393
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 20,
+        "mae": 1702.6928926161022
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 21,
+        "mae": 1689.977642152739
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 22,
+        "mae": 1744.9854412672958
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "local_hour": 23,
+        "mae": 1766.4391989403064
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 0,
+        "mae": 1480.0624109589041
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 1,
+        "mae": 1500.8709315068488
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 2,
+        "mae": 1479.9719337016575
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 3,
+        "mae": 1475.05898630137
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 4,
+        "mae": 1541.4900000000002
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 5,
+        "mae": 1563.6968219178077
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 6,
+        "mae": 1927.9886575342462
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 7,
+        "mae": 2048.94887671233
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 8,
+        "mae": 2048.8747397260286
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 9,
+        "mae": 2190.0305479452054
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 10,
+        "mae": 2503.210904109589
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 11,
+        "mae": 2676.039726027397
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 12,
+        "mae": 2759.4620547945196
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 13,
+        "mae": 2807.104136986302
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 14,
+        "mae": 2843.6691780821916
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 15,
+        "mae": 2717.460273972602
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 16,
+        "mae": 2565.253232876713
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 17,
+        "mae": 2390.9809863013706
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 18,
+        "mae": 2066.329232876713
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 19,
+        "mae": 1972.2709315068503
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 20,
+        "mae": 1890.836109589041
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 21,
+        "mae": 1774.8833150684923
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 22,
+        "mae": 1714.6949041095884
+      },
+      {
+        "model": "tso_official",
+        "local_hour": 23,
+        "mae": 1681.3415616438351
+      }
+    ],
+    "by_month": [
+      {
+        "model": "gbm_no_weather",
+        "month": "2025-11",
+        "mae": 1609.760995058933
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2025-12",
+        "mae": 1728.4620979532947
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2026-01",
+        "mae": 2181.685890966469
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2026-02",
+        "mae": 1685.0580795804005
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2026-03",
+        "mae": 1906.9585626731462
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2026-04",
+        "mae": 2194.1250351738627
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2026-05",
+        "mae": 1368.5564095211917
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2026-06",
+        "mae": 1315.0957274252146
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2026-07",
+        "mae": 1687.5424038664348
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2026-08",
+        "mae": 1859.50655909447
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2026-09",
+        "mae": 1463.2612165418209
+      },
+      {
+        "model": "gbm_no_weather",
+        "month": "2026-10",
+        "mae": 1455.8592228080252
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2025-11",
+        "mae": 1564.4920092182674
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2025-12",
+        "mae": 1457.885312027062
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2026-01",
+        "mae": 1918.4253648415906
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2026-02",
+        "mae": 1791.2158543088815
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2026-03",
+        "mae": 1749.146887519514
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2026-04",
+        "mae": 1976.1975544724662
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2026-05",
+        "mae": 1277.9419686370336
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2026-06",
+        "mae": 1262.7085356183463
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2026-07",
+        "mae": 1508.0085179849107
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2026-08",
+        "mae": 1711.9546237635266
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2026-09",
+        "mae": 1506.9954523160266
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "month": "2026-10",
+        "mae": 1357.2250708203753
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2025-11",
+        "mae": 1577.2519165796868
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2025-12",
+        "mae": 1518.5073197420431
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2026-01",
+        "mae": 1955.7920956810954
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2026-02",
+        "mae": 1739.3725798306273
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2026-03",
+        "mae": 1781.2254586777904
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2026-04",
+        "mae": 1929.1672632487773
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2026-05",
+        "mae": 1289.2664859096496
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2026-06",
+        "mae": 1286.6241814109678
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2026-07",
+        "mae": 1473.6726090077118
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2026-08",
+        "mae": 1690.6105911160653
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2026-09",
+        "mae": 1552.7606190031
+      },
+      {
+        "model": "gbm_weather",
+        "month": "2026-10",
+        "mae": 1399.8131609312072
+      },
+      {
+        "model": "naive_d7",
+        "month": "2025-11",
+        "mae": 2443.8339722222227
+      },
+      {
+        "model": "naive_d7",
+        "month": "2025-12",
+        "mae": 3220.1870698924727
+      },
+      {
+        "model": "naive_d7",
+        "month": "2026-01",
+        "mae": 4563.109045698923
+      },
+      {
+        "model": "naive_d7",
+        "month": "2026-02",
+        "mae": 2949.8298958333335
+      },
+      {
+        "model": "naive_d7",
+        "month": "2026-03",
+        "mae": 2942.8404851752025
+      },
+      {
+        "model": "naive_d7",
+        "month": "2026-04",
+        "mae": 4036.2802228412265
+      },
+      {
+        "model": "naive_d7",
+        "month": "2026-05",
+        "mae": 3704.2909677419348
+      },
+      {
+        "model": "naive_d7",
+        "month": "2026-06",
+        "mae": 2260.7358194444446
+      },
+      {
+        "model": "naive_d7",
+        "month": "2026-07",
+        "mae": 1762.4872983870964
+      },
+      {
+        "model": "naive_d7",
+        "month": "2026-08",
+        "mae": 2347.3820430107526
+      },
+      {
+        "model": "naive_d7",
+        "month": "2026-09",
+        "mae": 1768.3735555555559
+      },
+      {
+        "model": "naive_d7",
+        "month": "2026-10",
+        "mae": 1699.2846174496635
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2025-11",
+        "mae": 1661.1265801888198
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2025-12",
+        "mae": 2647.3445196224025
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2026-01",
+        "mae": 2707.399654688346
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2026-02",
+        "mae": 1744.601787570223
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2026-03",
+        "mae": 1912.0694372559756
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2026-04",
+        "mae": 2360.1876776615704
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2026-05",
+        "mae": 2242.7984780186734
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2026-06",
+        "mae": 1334.1331125291995
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2026-07",
+        "mae": 1328.2319725147302
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2026-08",
+        "mae": 1866.9307251647197
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2026-09",
+        "mae": 1224.3144235299858
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "month": "2026-10",
+        "mae": 1552.9476007792287
+      },
+      {
+        "model": "tso_official",
+        "month": "2025-11",
+        "mae": 1845.0110833333333
+      },
+      {
+        "model": "tso_official",
+        "month": "2025-12",
+        "mae": 2063.856370967742
+      },
+      {
+        "model": "tso_official",
+        "month": "2026-01",
+        "mae": 2930.393064516129
+      },
+      {
+        "model": "tso_official",
+        "month": "2026-02",
+        "mae": 1942.401979166667
+      },
+      {
+        "model": "tso_official",
+        "month": "2026-03",
+        "mae": 2183.571037735849
+      },
+      {
+        "model": "tso_official",
+        "month": "2026-04",
+        "mae": 2623.4470612813366
+      },
+      {
+        "model": "tso_official",
+        "month": "2026-05",
+        "mae": 2300.172258064516
+      },
+      {
+        "model": "tso_official",
+        "month": "2026-06",
+        "mae": 1894.8594027777779
+      },
+      {
+        "model": "tso_official",
+        "month": "2026-07",
+        "mae": 1738.111008064516
+      },
+      {
+        "model": "tso_official",
+        "month": "2026-08",
+        "mae": 2203.4715188172045
+      },
+      {
+        "model": "tso_official",
+        "month": "2026-09",
+        "mae": 1274.9895972222218
+      },
+      {
+        "model": "tso_official",
+        "month": "2026-10",
+        "mae": 1782.0516375838927
+      }
+    ],
+    "by_temp": [
+      {
+        "model": "gbm_no_weather",
+        "temp_bin": "0\u201310\u00b0C",
+        "mae": 1792.7210332094862,
+        "hours": 3478
+      },
+      {
+        "model": "gbm_no_weather",
+        "temp_bin": "10\u201320\u00b0C",
+        "mae": 1581.181351301235,
+        "hours": 3479
+      },
+      {
+        "model": "gbm_no_weather",
+        "temp_bin": "<0\u00b0C",
+        "mae": 2275.406251467309,
+        "hours": 408
+      },
+      {
+        "model": "gbm_no_weather",
+        "temp_bin": "\u226520\u00b0C",
+        "mae": 1629.8456687728049,
+        "hours": 1392
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "temp_bin": "0\u201310\u00b0C",
+        "mae": 1686.9597761425177,
+        "hours": 3478
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "temp_bin": "10\u201320\u00b0C",
+        "mae": 1463.575515415129,
+        "hours": 3479
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "temp_bin": "<0\u00b0C",
+        "mae": 1936.575378613742,
+        "hours": 408
+      },
+      {
+        "model": "gbm_oracle_weather",
+        "temp_bin": "\u226520\u00b0C",
+        "mae": 1552.798962749359,
+        "hours": 1392
+      },
+      {
+        "model": "gbm_weather",
+        "temp_bin": "0\u201310\u00b0C",
+        "mae": 1663.9636848136574,
+        "hours": 3478
+      },
+      {
+        "model": "gbm_weather",
+        "temp_bin": "10\u201320\u00b0C",
+        "mae": 1489.2995047085185,
+        "hours": 3479
+      },
+      {
+        "model": "gbm_weather",
+        "temp_bin": "<0\u00b0C",
+        "mae": 2182.056236073684,
+        "hours": 408
+      },
+      {
+        "model": "gbm_weather",
+        "temp_bin": "\u226520\u00b0C",
+        "mae": 1535.9275248777024,
+        "hours": 1392
+      },
+      {
+        "model": "naive_d7",
+        "temp_bin": "0\u201310\u00b0C",
+        "mae": 3039.9827832087417,
+        "hours": 3478
+      },
+      {
+        "model": "naive_d7",
+        "temp_bin": "10\u201320\u00b0C",
+        "mae": 2435.6422908881855,
+        "hours": 3479
+      },
+      {
+        "model": "naive_d7",
+        "temp_bin": "<0\u00b0C",
+        "mae": 6544.037965686275,
+        "hours": 408
+      },
+      {
+        "model": "naive_d7",
+        "temp_bin": "\u226520\u00b0C",
+        "mae": 2067.7365086206896,
+        "hours": 1392
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "temp_bin": "0\u201310\u00b0C",
+        "mae": 1924.6060636439415,
+        "hours": 3478
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "temp_bin": "10\u201320\u00b0C",
+        "mae": 1718.1486230314663,
+        "hours": 3479
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "temp_bin": "<0\u00b0C",
+        "mae": 4127.253356262465,
+        "hours": 408
+      },
+      {
+        "model": "ridge_calendar_lags",
+        "temp_bin": "\u226520\u00b0C",
+        "mae": 1548.4313683208588,
+        "hours": 1392
+      },
+      {
+        "model": "tso_official",
+        "temp_bin": "0\u201310\u00b0C",
+        "mae": 2037.2832576193223,
+        "hours": 3478
+      },
+      {
+        "model": "tso_official",
+        "temp_bin": "10\u201320\u00b0C",
+        "mae": 2082.7923081345216,
+        "hours": 3479
+      },
+      {
+        "model": "tso_official",
+        "temp_bin": "<0\u00b0C",
+        "mae": 3468.239019607843,
+        "hours": 408
+      },
+      {
+        "model": "tso_official",
+        "temp_bin": "\u226520\u00b0C",
+        "mae": 1695.62253591954,
+        "hours": 1392
+      }
+    ]
+  }
+}

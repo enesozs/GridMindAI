@@ -1,0 +1,569 @@
+{
+  "solar": {
+    "validation": {
+      "from": "2025-05-01",
+      "to": "2025-10-31",
+      "n_hours": 4413,
+      "leaderboard": [
+        {
+          "model": "tso_official",
+          "label": "official benchmark",
+          "mae_mw": 771.2577181055971,
+          "rmse_mw": 1404.3184855259244,
+          "bias_mw": 70.09572399728074,
+          "mape_pct": NaN,
+          "peak_mae_mw": 2028.6771195652173,
+          "pinball_mean_mw": null,
+          "coverage_90": null,
+          "width_90_mw": null,
+          "coverage_50": null,
+          "width_50_mw": null,
+          "skill_vs_tso": 1.1102230246251565e-16
+        },
+        {
+          "model": "gbm_weather",
+          "label": "operational",
+          "mae_mw": 1398.6333003734185,
+          "rmse_mw": 2531.9913795371413,
+          "bias_mw": 521.1200876156521,
+          "mape_pct": NaN,
+          "peak_mae_mw": 3333.2751733063274,
+          "pinball_mean_mw": 464.0099142973346,
+          "coverage_90": 0.9073192839338319,
+          "width_90_mw": 6141.783687238471,
+          "coverage_50": 0.5114434624971674,
+          "width_50_mw": 1594.026603881425,
+          "skill_vs_tso": -0.8134448026125607
+        },
+        {
+          "model": "naive_d2",
+          "label": "operational",
+          "mae_mw": 2835.94816338092,
+          "rmse_mw": 5409.16193843401,
+          "bias_mw": 123.369706548833,
+          "mape_pct": NaN,
+          "peak_mae_mw": 7708.906521739131,
+          "pinball_mean_mw": 1137.0430000951735,
+          "coverage_90": 0.8746884205755722,
+          "width_90_mw": 16328.430526172666,
+          "coverage_50": 0.42918649444822116,
+          "width_50_mw": 188.09129843643777,
+          "skill_vs_tso": -2.6770434795086677
+        },
+        {
+          "model": "naive_d7",
+          "label": "operational",
+          "mae_mw": 3427.151216859279,
+          "rmse_mw": 6279.073879377658,
+          "bias_mw": 370.3844368910039,
+          "mape_pct": NaN,
+          "peak_mae_mw": 9322.577717391305,
+          "pinball_mean_mw": 1356.8200078404714,
+          "coverage_90": 0.8744618173578065,
+          "width_90_mw": 20306.59080217538,
+          "coverage_50": 0.433718558803535,
+          "width_50_mw": 338.8026852481305,
+          "skill_vs_tso": -3.443587579618942
+        }
+      ],
+      "dm": [
+        {
+          "model": "gbm_weather",
+          "vs": "tso_official",
+          "dm_stat": 9.96820981334457,
+          "p_value": 2.0997933016721598e-23,
+          "n_days": 184
+        }
+      ]
+    },
+    "test": {
+      "from": "2025-11-01",
+      "to": "2026-10-31",
+      "n_hours": 8758,
+      "leaderboard": [
+        {
+          "model": "tso_official",
+          "label": "official benchmark",
+          "mae_mw": 671.5543308974652,
+          "rmse_mw": 1320.9873157068296,
+          "bias_mw": -66.60379652888786,
+          "mape_pct": NaN,
+          "peak_mae_mw": 1894.7696712328766,
+          "pinball_mean_mw": null,
+          "coverage_90": null,
+          "width_90_mw": null,
+          "coverage_50": null,
+          "width_50_mw": null,
+          "skill_vs_tso": 0.0
+        },
+        {
+          "model": "gbm_weather",
+          "label": "operational",
+          "mae_mw": 1265.1853638858627,
+          "rmse_mw": 2466.2774717804405,
+          "bias_mw": -64.72074462026627,
+          "mape_pct": NaN,
+          "peak_mae_mw": 3729.272281407413,
+          "pinball_mean_mw": 424.9177740693275,
+          "coverage_90": 0.9078556748116008,
+          "width_90_mw": 5349.575528444077,
+          "coverage_50": 0.4859556976478648,
+          "width_50_mw": 1583.9320208693173,
+          "skill_vs_tso": -0.8839657577594191
+        },
+        {
+          "model": "naive_d2",
+          "label": "operational",
+          "mae_mw": 2538.458659511304,
+          "rmse_mw": 5267.712872365748,
+          "bias_mw": 4.065578899292099,
+          "mape_pct": NaN,
+          "peak_mae_mw": 7587.910958904108,
+          "pinball_mean_mw": 1047.5327910219228,
+          "coverage_90": 0.886846311943366,
+          "width_90_mw": 16257.640069593514,
+          "coverage_50": 0.4970312856816625,
+          "width_50_mw": 164.8267992121487,
+          "skill_vs_tso": -2.7799751155188117
+        },
+        {
+          "model": "naive_d7",
+          "label": "operational",
+          "mae_mw": 3187.9009699703124,
+          "rmse_mw": 6301.427565467244,
+          "bias_mw": -22.472414364010024,
+          "mape_pct": NaN,
+          "peak_mae_mw": 9334.676383561644,
+          "pinball_mean_mw": 1291.9058076198903,
+          "coverage_90": 0.8865037679835579,
+          "width_90_mw": 20343.714975565188,
+          "coverage_50": 0.49771637360127885,
+          "width_50_mw": 300.24911709294383,
+          "skill_vs_tso": -3.74704848632277
+        }
+      ],
+      "dm": [
+        {
+          "model": "gbm_weather",
+          "vs": "tso_official",
+          "dm_stat": 11.417408131661643,
+          "p_value": 3.42290156861276e-30,
+          "n_days": 365
+        }
+      ]
+    },
+    "selection": {
+      "v2_site_points_absolute": {
+        "pinball_mean_mw": 475.59766406078813,
+        "mae_mw": 1369.3733262603942
+      },
+      "v2_site_points_ratio": {
+        "pinball_mean_mw": 464.88257296101494,
+        "mae_mw": 1388.8831812453761
+      },
+      "v1_population_points_ratio": {
+        "pinball_mean_mw": 464.0099142973346,
+        "mae_mw": 1398.6333003734185
+      }
+    },
+    "chosen": "v1_population_points_ratio"
+  },
+  "wind_onshore": {
+    "validation": {
+      "from": "2025-05-01",
+      "to": "2025-10-31",
+      "n_hours": 4413,
+      "leaderboard": [
+        {
+          "model": "tso_official",
+          "label": "official benchmark",
+          "mae_mw": 1115.3814570586903,
+          "rmse_mw": 1543.9423698440642,
+          "bias_mw": 70.82568094266938,
+          "mape_pct": NaN,
+          "peak_mae_mw": 1434.8392391304346,
+          "pinball_mean_mw": null,
+          "coverage_90": null,
+          "width_90_mw": null,
+          "coverage_50": null,
+          "width_50_mw": null,
+          "skill_vs_tso": 0.0
+        },
+        {
+          "model": "gbm_weather",
+          "label": "operational",
+          "mae_mw": 2390.5118887004433,
+          "rmse_mw": 3226.130545697554,
+          "bias_mw": -814.6468634838471,
+          "mape_pct": NaN,
+          "peak_mae_mw": 3803.153249442843,
+          "pinball_mean_mw": 770.3396961480781,
+          "coverage_90": 0.8860185814638568,
+          "width_90_mw": 9756.995631659927,
+          "coverage_50": 0.47699977339678223,
+          "width_50_mw": 3536.6136646095083,
+          "skill_vs_tso": -1.143223624144091
+        },
+        {
+          "model": "gbm_v1",
+          "label": "operational",
+          "mae_mw": 3089.66950556613,
+          "rmse_mw": 4049.2232777412037,
+          "bias_mw": 145.95679585937793,
+          "mape_pct": NaN,
+          "peak_mae_mw": 4099.284036189331,
+          "pinball_mean_mw": 958.9588147294122,
+          "coverage_90": 0.9123045547246771,
+          "width_90_mw": 13094.291278287425,
+          "coverage_50": 0.49648765012463175,
+          "width_50_mw": 5015.583351992029,
+          "skill_vs_tso": -1.7700563659303818
+        },
+        {
+          "model": "naive_d2",
+          "label": "operational",
+          "mae_mw": 7392.273845456605,
+          "rmse_mw": 9789.256558229297,
+          "bias_mw": -198.33690913210964,
+          "mape_pct": NaN,
+          "peak_mae_mw": 8419.635326086956,
+          "pinball_mean_mw": 2395.97641477453,
+          "coverage_90": 0.919782460910945,
+          "width_90_mw": 35670.40709041467,
+          "coverage_50": 0.5094040335372763,
+          "width_50_mw": 11920.130720598234,
+          "skill_vs_tso": -5.627574628101093
+        },
+        {
+          "model": "naive_d7",
+          "label": "operational",
+          "mae_mw": 8756.120777249038,
+          "rmse_mw": 11724.608789282805,
+          "bias_mw": -948.6404917289825,
+          "mape_pct": NaN,
+          "peak_mae_mw": 10382.846304347828,
+          "pinball_mean_mw": 2871.8981004441425,
+          "coverage_90": 0.9061862678450034,
+          "width_90_mw": 42100.28282256966,
+          "coverage_50": 0.5311579424427827,
+          "width_50_mw": 13931.825241332426,
+          "skill_vs_tso": -6.850337408638038
+        }
+      ],
+      "dm": [
+        {
+          "model": "gbm_weather",
+          "vs": "tso_official",
+          "dm_stat": 11.236934992811257,
+          "p_value": 2.6854480564957824e-29,
+          "n_days": 184
+        }
+      ]
+    },
+    "test": {
+      "from": "2025-11-01",
+      "to": "2026-10-31",
+      "n_hours": 8758,
+      "leaderboard": [
+        {
+          "model": "tso_official",
+          "label": "official benchmark",
+          "mae_mw": 1249.5604772779172,
+          "rmse_mw": 1797.1893850200706,
+          "bias_mw": 48.984558118291865,
+          "mape_pct": NaN,
+          "peak_mae_mw": 1633.4819452054792,
+          "pinball_mean_mw": null,
+          "coverage_90": null,
+          "width_90_mw": null,
+          "coverage_50": null,
+          "width_50_mw": null,
+          "skill_vs_tso": 0.0
+        },
+        {
+          "model": "gbm_weather",
+          "label": "operational",
+          "mae_mw": 2647.265753560089,
+          "rmse_mw": 3588.0281182552776,
+          "bias_mw": -851.3374865279361,
+          "mape_pct": NaN,
+          "peak_mae_mw": 4038.159093469681,
+          "pinball_mean_mw": 845.1260215907096,
+          "coverage_90": 0.8998629824160768,
+          "width_90_mw": 11122.596166833559,
+          "coverage_50": 0.5115323133135419,
+          "width_50_mw": 4325.805666320504,
+          "skill_vs_tso": -1.1185575261847092
+        },
+        {
+          "model": "gbm_v1",
+          "label": "operational",
+          "mae_mw": 3415.5639352587614,
+          "rmse_mw": 4596.662836933171,
+          "bias_mw": -254.6318711218644,
+          "mape_pct": NaN,
+          "peak_mae_mw": 4479.806307188781,
+          "pinball_mean_mw": 1092.851679666993,
+          "coverage_90": 0.8862754053436858,
+          "width_90_mw": 13878.652389753503,
+          "coverage_50": 0.5027403516784654,
+          "width_50_mw": 5601.86228620912,
+          "skill_vs_tso": -1.7334122656466664
+        },
+        {
+          "model": "naive_d2",
+          "label": "operational",
+          "mae_mw": 8712.061116122404,
+          "rmse_mw": 11313.854771980508,
+          "bias_mw": 91.70256165791278,
+          "mape_pct": NaN,
+          "peak_mae_mw": 10291.368465753423,
+          "pinball_mean_mw": 2786.0356171488934,
+          "coverage_90": 0.8890157570221512,
+          "width_90_mw": 36151.7197603905,
+          "coverage_50": 0.46734414249828726,
+          "width_50_mw": 12559.61279944051,
+          "skill_vs_tso": -5.972100410138642
+        },
+        {
+          "model": "naive_d7",
+          "label": "operational",
+          "mae_mw": 10120.660600593743,
+          "rmse_mw": 12939.450920910176,
+          "bias_mw": 281.16773464261246,
+          "mape_pct": NaN,
+          "peak_mae_mw": 12100.601753424658,
+          "pinball_mean_mw": 3207.86550360813,
+          "coverage_90": 0.8911852021009363,
+          "width_90_mw": 42636.54810773007,
+          "coverage_50": 0.4535282027860242,
+          "width_50_mw": 14443.937140043388,
+          "skill_vs_tso": -7.099376368433896
+        }
+      ],
+      "dm": [
+        {
+          "model": "gbm_weather",
+          "vs": "tso_official",
+          "dm_stat": 15.933062789067787,
+          "p_value": 3.736003940834054e-57,
+          "n_days": 365
+        }
+      ]
+    },
+    "selection": {
+      "v2_site_points_absolute": {
+        "pinball_mean_mw": 770.3396961480781,
+        "mae_mw": 2390.5118887004433
+      },
+      "v2_site_points_ratio": {
+        "pinball_mean_mw": 920.683796686833,
+        "mae_mw": 2926.8643781511046
+      },
+      "v1_population_points_ratio": {
+        "pinball_mean_mw": 958.9588147294122,
+        "mae_mw": 3089.66950556613
+      }
+    },
+    "chosen": "v2_site_points_absolute"
+  },
+  "wind_offshore": {
+    "validation": {
+      "from": "2025-05-01",
+      "to": "2025-10-31",
+      "n_hours": 4417,
+      "leaderboard": [
+        {
+          "model": "tso_official",
+          "label": "official benchmark",
+          "mae_mw": 498.3304822277564,
+          "rmse_mw": 676.1797475786965,
+          "bias_mw": -53.8840525243378,
+          "mape_pct": NaN,
+          "peak_mae_mw": 802.8331521739129,
+          "pinball_mean_mw": null,
+          "coverage_90": null,
+          "width_90_mw": null,
+          "coverage_50": null,
+          "width_50_mw": null,
+          "skill_vs_tso": 0.0
+        },
+        {
+          "model": "gbm_weather",
+          "label": "operational",
+          "mae_mw": 818.9100678959016,
+          "rmse_mw": 1096.9625688450706,
+          "bias_mw": -247.71441036045408,
+          "mape_pct": NaN,
+          "peak_mae_mw": 1378.9227426065936,
+          "pinball_mean_mw": 258.1195279871636,
+          "coverage_90": 0.8929137423590673,
+          "width_90_mw": 3296.839736418514,
+          "coverage_50": 0.49128367670364503,
+          "width_50_mw": 1284.7853038368291,
+          "skill_vs_tso": -0.6433071969328736
+        },
+        {
+          "model": "gbm_v1",
+          "label": "operational",
+          "mae_mw": 1115.0314188425536,
+          "rmse_mw": 1457.0063852688618,
+          "bias_mw": -179.14195660353633,
+          "mape_pct": NaN,
+          "peak_mae_mw": 1722.8453537647463,
+          "pinball_mean_mw": 348.80664556429,
+          "coverage_90": 0.8990264885669006,
+          "width_90_mw": 4583.786103103393,
+          "coverage_50": 0.5442608105048675,
+          "width_50_mw": 1997.3190127276753,
+          "skill_vs_tso": -1.2375340433879796
+        },
+        {
+          "model": "naive_d2",
+          "label": "operational",
+          "mae_mw": 1954.4923658591804,
+          "rmse_mw": 2414.3697270012117,
+          "bias_mw": -37.32053882725833,
+          "mape_pct": NaN,
+          "peak_mae_mw": 2308.4530978260873,
+          "pinball_mean_mw": 602.4356937061355,
+          "coverage_90": 0.9026488566900611,
+          "width_90_mw": 8185.61853746887,
+          "coverage_50": 0.4706814580031696,
+          "width_50_mw": 3159.1289902648855,
+          "skill_vs_tso": -2.922080698579264
+        },
+        {
+          "model": "naive_d7",
+          "label": "operational",
+          "mae_mw": 1960.593488793299,
+          "rmse_mw": 2446.614739583243,
+          "bias_mw": -167.3783699343446,
+          "mape_pct": NaN,
+          "peak_mae_mw": 2544.1792934782607,
+          "pinball_mean_mw": 609.669253294091,
+          "coverage_90": 0.9187231152365859,
+          "width_90_mw": 8776.6447385103,
+          "coverage_50": 0.5100747113425402,
+          "width_50_mw": 3408.3036563278242,
+          "skill_vs_tso": -2.9343238246807295
+        }
+      ],
+      "dm": [
+        {
+          "model": "gbm_weather",
+          "vs": "tso_official",
+          "dm_stat": 7.589470080359939,
+          "p_value": 3.212164314253531e-14,
+          "n_days": 184
+        }
+      ]
+    },
+    "test": {
+      "from": "2025-11-01",
+      "to": "2026-10-31",
+      "n_hours": 8758,
+      "leaderboard": [
+        {
+          "model": "tso_official",
+          "label": "official benchmark",
+          "mae_mw": 568.8995809545559,
+          "rmse_mw": 803.3454689341526,
+          "bias_mw": -130.2730429321763,
+          "mape_pct": NaN,
+          "peak_mae_mw": 841.4681095890411,
+          "pinball_mean_mw": null,
+          "coverage_90": null,
+          "width_90_mw": null,
+          "coverage_50": null,
+          "width_50_mw": null,
+          "skill_vs_tso": 1.1102230246251565e-16
+        },
+        {
+          "model": "gbm_weather",
+          "label": "operational",
+          "mae_mw": 896.358730870247,
+          "rmse_mw": 1193.5939109605333,
+          "bias_mw": -354.45399966314466,
+          "mape_pct": NaN,
+          "peak_mae_mw": 1432.6167400856025,
+          "pinball_mean_mw": 284.24509530943516,
+          "coverage_90": 0.8955240922585065,
+          "width_90_mw": 3866.4167909547414,
+          "coverage_50": 0.5140443023521352,
+          "width_50_mw": 1522.4819196559808,
+          "skill_vs_tso": -0.5756009687443393
+        },
+        {
+          "model": "gbm_v1",
+          "label": "operational",
+          "mae_mw": 1272.2711406481596,
+          "rmse_mw": 1620.9399886848707,
+          "bias_mw": -202.0216009926538,
+          "mape_pct": NaN,
+          "peak_mae_mw": 1694.5440996898565,
+          "pinball_mean_mw": 392.7549936132132,
+          "coverage_90": 0.8791961635076502,
+          "width_90_mw": 4823.042618921366,
+          "coverage_50": 0.5099337748344371,
+          "width_50_mw": 2228.7574139691324,
+          "skill_vs_tso": -1.236372082597455
+        },
+        {
+          "model": "naive_d2",
+          "label": "operational",
+          "mae_mw": 2186.630492121489,
+          "rmse_mw": 2772.120383650862,
+          "bias_mw": 21.54085521808632,
+          "mape_pct": NaN,
+          "peak_mae_mw": 2513.3373972602735,
+          "pinball_mean_mw": 692.1314398355789,
+          "coverage_90": 0.8504224708837634,
+          "width_90_mw": 8534.626979961178,
+          "coverage_50": 0.47522265357387533,
+          "width_50_mw": 3312.519666305092,
+          "skill_vs_tso": -2.8436141725619564
+        },
+        {
+          "model": "naive_d7",
+          "label": "operational",
+          "mae_mw": 2345.4063085179264,
+          "rmse_mw": 2932.746088808351,
+          "bias_mw": 44.70510276318796,
+          "mape_pct": NaN,
+          "peak_mae_mw": 2645.988136986301,
+          "pinball_mean_mw": 734.3383684123088,
+          "coverage_90": 0.8539620918017812,
+          "width_90_mw": 9017.718290191824,
+          "coverage_50": 0.4596939940625714,
+          "width_50_mw": 3522.1023030372235,
+          "skill_vs_tso": -3.1227070418694494
+        }
+      ],
+      "dm": [
+        {
+          "model": "gbm_weather",
+          "vs": "tso_official",
+          "dm_stat": 12.883260405908203,
+          "p_value": 5.592225293503325e-38,
+          "n_days": 365
+        }
+      ]
+    },
+    "selection": {
+      "v2_site_points_absolute": {
+        "pinball_mean_mw": 258.1195279871636,
+        "mae_mw": 818.9100678959016
+      },
+      "v2_site_points_ratio": {
+        "pinball_mean_mw": 262.39672042485824,
+        "mae_mw": 840.1175542209751
+      },
+      "v1_population_points_ratio": {
+        "pinball_mean_mw": 348.80664556429,
+        "mae_mw": 1115.0314188425536
+      }
+    },
+    "chosen": "v2_site_points_absolute"
+  }
+}

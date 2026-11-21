@@ -1,0 +1,48 @@
+[project]
+name = "gridmind"
+version = "0.1.0"
+description = "Point-in-time electricity load forecasting and market intelligence"
+readme = "README.md"
+authors = [
+    { name = "Enes Taha Ozsoy", email = "145999360+enesozs@users.noreply.github.com" }
+]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=2.0.0",
+    "holidays>=0.108",
+    "httpx>=0.28.1",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "polars>=2.1.0",
+    "pyarrow>=26.0.1",
+    "pyshp>=3.1.8",
+    "scikit-learn>=1.9.1",
+    "shapely>=2.2.0",
+    "typer>=0.29.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.5",
+]
+
+[project.scripts]
+gridmind = "gridmind.cli:app"
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff.lint]
+ignore = ["UP017"]

@@ -1,0 +1,502 @@
+{
+  "generated_at_utc": "2026-11-21T12:20:15+00:00",
+  "actuals": [
+    {
+      "zone_id": "DE",
+      "metric": "actual_total_load",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 54225.5
+    },
+    {
+      "zone_id": "DE",
+      "metric": "gen_solar",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 7102.7
+    },
+    {
+      "zone_id": "DE",
+      "metric": "gen_wind_onshore",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 12115.7
+    },
+    {
+      "zone_id": "DE",
+      "metric": "residual_load",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 4,
+      "partial_hours": 4,
+      "negative_hours": 954,
+      "mean_mw": 32079.6
+    },
+    {
+      "zone_id": "DE",
+      "metric": "tso_day_ahead_load_forecast",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T21:00:00+00:00",
+      "hours": 53662,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 54045.2
+    },
+    {
+      "zone_id": "DE_50HZ",
+      "metric": "actual_total_load",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 3,
+      "partial_hours": 3,
+      "negative_hours": 0,
+      "mean_mw": 11771.5
+    },
+    {
+      "zone_id": "DE_50HZ",
+      "metric": "gen_solar",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 1943.5
+    },
+    {
+      "zone_id": "DE_50HZ",
+      "metric": "gen_wind_onshore",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 8,
+      "partial_hours": 8,
+      "negative_hours": 0,
+      "mean_mw": 3936.6
+    },
+    {
+      "zone_id": "DE_50HZ",
+      "metric": "tso_day_ahead_load_forecast",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T21:00:00+00:00",
+      "hours": 53662,
+      "missing_hours": 169,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 11364.0
+    },
+    {
+      "zone_id": "DE_AMPRION",
+      "metric": "actual_total_load",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 19553.6
+    },
+    {
+      "zone_id": "DE_AMPRION",
+      "metric": "gen_solar",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 1544.8
+    },
+    {
+      "zone_id": "DE_AMPRION",
+      "metric": "gen_wind_onshore",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 2574.7
+    },
+    {
+      "zone_id": "DE_AMPRION",
+      "metric": "tso_day_ahead_load_forecast",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T21:00:00+00:00",
+      "hours": 53662,
+      "missing_hours": 289,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 19419.2
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "actual_total_load",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T19:00:00+00:00",
+      "hours": 53660,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 54785.7
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "gen_biomass",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T19:00:00+00:00",
+      "hours": 53660,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 4231.3
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "gen_gas",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T19:00:00+00:00",
+      "hours": 53660,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 6449.8
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "gen_hard_coal",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 4650.5
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "gen_hydro",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T19:00:00+00:00",
+      "hours": 53660,
+      "missing_hours": 94,
+      "partial_hours": 25,
+      "negative_hours": 0,
+      "mean_mw": 1658.3
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "gen_lignite",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 9405.5
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "gen_nuclear",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2024-01-30T11:00:00+00:00",
+      "hours": 29196,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 4134.8
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "gen_other_conventional",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T19:00:00+00:00",
+      "hours": 53660,
+      "missing_hours": 83,
+      "partial_hours": 19,
+      "negative_hours": 0,
+      "mean_mw": 1645.0
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "gen_other_renewable",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 132.8
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "gen_pumped_storage",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 2,
+      "partial_hours": 2,
+      "negative_hours": 0,
+      "mean_mw": 1125.3
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "gen_solar",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T19:00:00+00:00",
+      "hours": 53660,
+      "missing_hours": 2,
+      "partial_hours": 2,
+      "negative_hours": 0,
+      "mean_mw": 7138.9
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "gen_wind_offshore",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 2926.1
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "gen_wind_onshore",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T19:00:00+00:00",
+      "hours": 53660,
+      "missing_hours": 2,
+      "partial_hours": 2,
+      "negative_hours": 0,
+      "mean_mw": 12163.2
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "residual_load",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T19:00:00+00:00",
+      "hours": 53660,
+      "missing_hours": 5,
+      "partial_hours": 5,
+      "negative_hours": 917,
+      "mean_mw": 32556.4
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "tso_da_gen_solar",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T21:00:00+00:00",
+      "hours": 53662,
+      "missing_hours": 4,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 7146.0
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "tso_da_gen_wind_offshore",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T21:00:00+00:00",
+      "hours": 53662,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 2894.3
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "tso_da_gen_wind_onshore",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T21:00:00+00:00",
+      "hours": 53662,
+      "missing_hours": 4,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 12096.4
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "tso_da_gen_wind_solar_total",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-21T12:00:00+00:00",
+      "hours": 53821,
+      "missing_hours": 4,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 22166.3
+    },
+    {
+      "zone_id": "DE_LU",
+      "metric": "tso_day_ahead_load_forecast",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T21:00:00+00:00",
+      "hours": 53662,
+      "missing_hours": 195,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 54560.5
+    },
+    {
+      "zone_id": "DE_TENNET",
+      "metric": "actual_total_load",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 16263.0
+    },
+    {
+      "zone_id": "DE_TENNET",
+      "metric": "gen_solar",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 2647.4
+    },
+    {
+      "zone_id": "DE_TENNET",
+      "metric": "gen_wind_onshore",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 5235.2
+    },
+    {
+      "zone_id": "DE_TENNET",
+      "metric": "tso_day_ahead_load_forecast",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T21:00:00+00:00",
+      "hours": 53662,
+      "missing_hours": 169,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 16193.2
+    },
+    {
+      "zone_id": "DE_TRANSNETBW",
+      "metric": "actual_total_load",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 1,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 6637.6
+    },
+    {
+      "zone_id": "DE_TRANSNETBW",
+      "metric": "gen_solar",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 4,
+      "partial_hours": 3,
+      "negative_hours": 0,
+      "mean_mw": 967.5
+    },
+    {
+      "zone_id": "DE_TRANSNETBW",
+      "metric": "gen_wind_onshore",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T20:00:00+00:00",
+      "hours": 53661,
+      "missing_hours": 7,
+      "partial_hours": 5,
+      "negative_hours": 0,
+      "mean_mw": 366.6
+    },
+    {
+      "zone_id": "DE_TRANSNETBW",
+      "metric": "tso_day_ahead_load_forecast",
+      "first": "2020-10-01T00:00:00+00:00",
+      "last": "2026-11-14T21:00:00+00:00",
+      "hours": 53662,
+      "missing_hours": 217,
+      "partial_hours": 1,
+      "negative_hours": 0,
+      "mean_mw": 7055.7
+    }
+  ],
+  "dst_check_DE_LU": {
+    "local_days": 2234,
+    "days_23h": 6,
+    "days_25h": 7,
+    "days_other": 0
+  },
+  "control_area_sum_vs_DE": {
+    "hours_compared": 53658,
+    "median_rel_diff": 0.0,
+    "p99_abs_rel_diff": 2e-05,
+    "hours_over_1pct": 0
+  },
+  "identities": {
+    "residual_load_identity_DE_LU": {
+      "identity": "residual_load = + actual_total_load - gen_wind_onshore - gen_wind_offshore - gen_solar",
+      "hours_compared": 53655,
+      "median_abs_diff_mw": 0.0,
+      "p99_abs_diff_mw": 0.0,
+      "p99_rel_to_mean_level": 0.0,
+      "hours_over_1pct_of_mean_level": 0
+    },
+    "tso_renewables_forecast_total_DE_LU": {
+      "identity": "tso_da_gen_wind_solar_total = + tso_da_gen_solar + tso_da_gen_wind_onshore + tso_da_gen_wind_offshore",
+      "hours_compared": 53658,
+      "median_abs_diff_mw": 0.0,
+      "p99_abs_diff_mw": 0.0,
+      "p99_rel_to_mean_level": 0.0,
+      "hours_over_1pct_of_mean_level": 0
+    }
+  },
+  "weather": {
+    "openmeteo-gfs_seamless-previous_day2": {
+      "rows": 632112,
+      "locations": 13,
+      "valid_from": "2021-05-01T00:00:00+00:00",
+      "valid_to": "2026-11-16T23:00:00+00:00",
+      "fixed_lead_hours": 48.0,
+      "variables": {
+        "temperature_2m": {
+          "first_valid": "2021-05-01T00:00:00+00:00",
+          "null_share_after_first": 0.0106
+        },
+        "downward_short_wave_radiation_flux_surface": {
+          "first_valid": "2024-01-20T12:00:00+00:00",
+          "null_share_after_first": 0.0
+        },
+        "total_cloud_cover_atmosphere": {
+          "first_valid": "2024-01-20T12:00:00+00:00",
+          "null_share_after_first": 0.0
+        },
+        "wind_speed_10m": {
+          "first_valid": "2024-01-20T12:00:00+00:00",
+          "null_share_after_first": 0.0
+        }
+      }
+    }
+  }
+}

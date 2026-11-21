@@ -1,0 +1,128 @@
+{
+  "filters": {
+    "actual_total_load": {
+      "filter_id": 410,
+      "first_week": "2018-09-30T22:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 424
+    },
+    "tso_day_ahead_load_forecast": {
+      "filter_id": 411,
+      "first_week": "2018-09-30T22:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 424
+    },
+    "residual_load": {
+      "filter_id": 4359,
+      "first_week": "2018-09-30T22:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 424
+    },
+    "gen_solar": {
+      "filter_id": 4068,
+      "first_week": "2016-12-25T23:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 516
+    },
+    "gen_wind_onshore": {
+      "filter_id": 4067,
+      "first_week": "2016-12-25T23:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 516
+    },
+    "gen_wind_offshore": {
+      "filter_id": 1225,
+      "first_week": "2018-09-30T22:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 424
+    },
+    "gen_lignite": {
+      "filter_id": 1223,
+      "first_week": "2018-09-30T22:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 424
+    },
+    "gen_hard_coal": {
+      "filter_id": 4069,
+      "first_week": "2018-09-30T22:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 424
+    },
+    "gen_gas": {
+      "filter_id": 4071,
+      "first_week": "2016-12-25T23:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 516
+    },
+    "gen_nuclear": {
+      "filter_id": 1224,
+      "first_week": "2018-09-30T22:00:00+00:00",
+      "last_week": "2024-01-28T23:00:00+00:00",
+      "n_weeks": 279
+    },
+    "gen_hydro": {
+      "filter_id": 1226,
+      "first_week": "2016-12-25T23:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 516
+    },
+    "gen_biomass": {
+      "filter_id": 4066,
+      "first_week": "2016-12-25T23:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 516
+    },
+    "gen_other_renewable": {
+      "filter_id": 1228,
+      "first_week": "2018-09-30T22:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 424
+    },
+    "gen_other_conventional": {
+      "filter_id": 1227,
+      "first_week": "2018-09-30T22:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 424
+    },
+    "gen_pumped_storage": {
+      "filter_id": 4070,
+      "first_week": "2018-09-30T22:00:00+00:00",
+      "last_week": "2026-11-08T23:00:00+00:00",
+      "n_weeks": 424
+    }
+  },
+  "sample": {
+    "actual_total_load": {
+      "raw_sha256": [
+        "98db0487f4352e1bf997bbf523d0ca9c43856d0382d24912d4ca2e321244b9ce",
+        "8542ff916339331ae7b016305910ab1797b122b87db2dfa689a7d029d9e36e27"
+      ],
+      "source_created_utc": [
+        "2025-12-08T15:24:18.184000+00:00",
+        "2025-12-08T15:24:15.919000+00:00"
+      ],
+      "n_quarter_hours": 1340,
+      "expected_quarter_hours": 1340,
+      "n_null": 0,
+      "hourly_rows": 335,
+      "hourly_partial": 0,
+      "mean_mw": 53394.1
+    },
+    "tso_day_ahead_load_forecast": {
+      "raw_sha256": [
+        "f70c994e6cfa97b8a87f3ffbc0418c036d468b6e786e933180307d5734e0bcc6",
+        "16e9b998d58be2845f82bf2e2b22ddb1d3917015cd6cab97b849791270a9948c"
+      ],
+      "source_created_utc": [
+        "2025-03-31T11:21:51.561000+00:00",
+        "2025-04-05T13:38:00.533000+00:00"
+      ],
+      "n_quarter_hours": 1340,
+      "expected_quarter_hours": 1340,
+      "n_null": 0,
+      "hourly_rows": 335,
+      "hourly_partial": 0,
+      "mean_mw": 54946.0
+    }
+  }
+}
