@@ -2,13 +2,14 @@
 # deadline and appends it to track_record/live_forecasts.csv (append-only, committed, so the
 # git history proves forecasts were not revised).
 #
-# Runs only once this repository is hosted on GitHub with Actions enabled.
+# Manual-only for now: start it from the Actions tab ("Run workflow"). To run it daily,
+# add this trigger under `on:` (06:15 UTC = 07:15 CET / 08:15 CEST, well before 10:00 local):
+#   schedule:
+#     - cron: "15 6 * * *"
 # Deployment of the site is intentionally not automated here.
 name: Daily forecast
 
 on:
-  schedule:
-    - cron: "15 6 * * *" # 06:15 UTC = 07:15 CET / 08:15 CEST, well before 10:00 local
   workflow_dispatch:
 
 permissions:
