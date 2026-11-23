@@ -2,7 +2,7 @@
 
 **Point-in-time day-ahead electricity load forecasts for Germany–Luxembourg, benchmarked against the grid operators' own forecast, on open data.**
 
-> **Status:** data pipeline, load and renewables forecasts with a frozen test year, static web app and CI are in place. Storage dispatch and control-area forecasts are in place. The site is not publicly deployed.
+> **Status:** data pipeline, load and renewables forecasts with a frozen test year, static web app and CI are in place. Storage dispatch and control-area forecasts are in place. The static site is live at [gridmind-ai-bice.vercel.app](https://gridmind-ai-bice.vercel.app).
 
 ## What it does
 
